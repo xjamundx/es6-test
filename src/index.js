@@ -1,3 +1,5 @@
+require('source-map-support').install(); // es6 source-map magic
+
 import express from 'express';
 import routes from './routes';
 
