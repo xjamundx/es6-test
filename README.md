@@ -1,36 +1,29 @@
-# node-js-getting-started
+# es6-test
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
-
-This application support the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
-
-## Running Locally
-
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
+A barebones ES6 Node.js app using [Express 4](http://expressjs.com/).
 
 ```sh
-$ git clone git@github.com:heroku/node-js-getting-started.git # or clone your own fork
-$ cd node-js-getting-started
 $ npm install
 $ npm start
 ```
 
 Your app should now be running on [localhost:5000](http://localhost:5000/).
 
-## Deploying to Heroku
+### URLs
 
-```
-$ heroku create
-$ git push heroku master
-$ heroku open
-```
+Try the following:
 
-## Documentation
+- [http://localhost:5000](http://localhost:5000/) - hello world
+- [http://localhost:5000/math/2](http://localhost:5000/math/2) - try some math
+- [http://localhost:5000/crash](http://localhost:5000/crash) - force a crash
+- [http://localhost:5000/slow](http://localhost:5000/slow) - arbitrary amount of slowness
+- 
 
-For more information about using Node.js on Heroku, see these Dev Center articles:
+### Branches
 
-- [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
-- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
-- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
-- [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
-- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
+There are several branches each exploring a different way to transpile ES6 code.
+
+- `6to5` - basic pre-compile
+- `6to5-source-maps` - same as `6to5` but with (semi) working source maps
+- `6to5-register` - uses the `require('6to5/register')` functionality
+- `6to5-node` - uses the `6to5-node` binary
