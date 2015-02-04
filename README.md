@@ -17,7 +17,6 @@ Try the following:
 - [http://localhost:5000/math/2](http://localhost:5000/math/2) - try some math
 - [http://localhost:5000/crash](http://localhost:5000/crash) - force a crash
 - [http://localhost:5000/slow](http://localhost:5000/slow) - arbitrary amount of slowness
-- 
 
 ### Branches
 
